@@ -1,7 +1,5 @@
 package org.example.takeout;
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
 import java.util.List;
 
 public class TakeOutApp {
@@ -33,7 +31,6 @@ public class TakeOutApp {
         return menu;
     }
 
-
     public void shop(int num) {
         FoodItem item = menu.getFood(num);
         shoppingCart.addItem(item);
@@ -50,6 +47,4 @@ public class TakeOutApp {
             System.out.println("You don't have enough money to purchase all items!");
         }
     }
-
-
 }

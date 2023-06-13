@@ -1,7 +1,5 @@
 package org.example.bakecake;
 
-import java.util.Scanner;
-
 public class MakingCake {
     private CakeRecipe recipe;
 

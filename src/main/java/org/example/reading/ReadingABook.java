@@ -5,7 +5,6 @@ import java.util.List;
 
 public class ReadingABook {
     private static List<String> books = new ArrayList<>();
-    private int size;
 
     public static void printBooks(){
         populateList();
