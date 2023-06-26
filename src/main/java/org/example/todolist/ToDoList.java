@@ -69,7 +69,7 @@ public class ToDoList implements Serializable {
 
     public void saveToFile() {
         try {
-            FileOutputStream fos = new FileOutputStream("t.tmp");
+            FileOutputStream fos = new FileOutputStream("savedtasks.tmp");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(todoList);
             oos.close();
@@ -81,7 +81,7 @@ public class ToDoList implements Serializable {
 
     public void readFromFile() {
         try {
-            FileInputStream fis = new FileInputStream("t.tmp");
+            FileInputStream fis = new FileInputStream("savedtasks.tmp");
             ObjectInputStream ois = new ObjectInputStream(fis);
             List<Task> taskList = (List<Task>) ois.readObject();
             for (Task task : taskList) {
